@@ -15,3 +15,12 @@ $('.input_copy .icon').click(function() {
             addrsField.removeClass('flashBG').dequeue();
         });
     });
+
+window.onCertificateClick =function(){
+  window.open('https://learn.microsoft.com/api/credentials/share/pt-br/JoaoDotFranca/A094978949661AB2?sharingId', '_blank');
+}
+
+window.downloadResume = function(){
+  window.open("./documents/Resume PT-BR.pdf", '_blank');
+
+}
