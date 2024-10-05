@@ -1,0 +1,223 @@
+:root {
+    --primary-color: #00ffb3;
+    --secondary-color: #a1a8ae;
+    --background-color: #0a192f;
+    --text-color: #e0e0e0;
+    --card-bg: #112240;
+    --header-bg: #0a192f;
+    --header-text: #ffffff;
+    --card-highlight: #1e3a8a;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('path-to-your-background.gif');
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.light-mode {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+    --header-bg: #007bff;
+    --header-text: #ffffff;
+    --card-highlight: #e6f2ff;
+}
+
+.card, .btn, .form-select {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+}
+
+.card:hover, .btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.theme-toggle {
+    width: 60px;
+    height: 30px;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.theme-toggle::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    left: 3px;
+    transition: transform 0.3s;
+}
+
+.light-mode .theme-toggle::before {
+    transform: translateX(30px);
+}
+
+.theme-toggle i {
+    color: var(--text-color);
+    z-index: 1;
+}
+
+.language-select {
+    width: auto;
+    display: inline-block;
+}
+
+header {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.blog-post {
+    margin-bottom: 2rem;
+}
+
+.blog-post h2 {
+    color: var(--primary-color);
+}
+
+.blog-post .date {
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+.blog-content {
+    line-height: 1.8;
+}
+
+.blog-content h1, .blog-content h2, .blog-content h3 {
+    color: var(--primary-color);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.blog-content p {
+    margin-bottom: 1em;
+}
+
+.blog-content pre {
+    background-color: var(--card-bg);
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.blog-content code {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--primary-color);
+}
+
+
+.text-muted{
+    color: white !important;
+    font-size: large;
+}
+
+.light-mode {
+    background-image: url('light-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .light-mode header {
+    background-color: #4CAF50;
+  }
+
+  .certification {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .certification a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+  }
+  
+  .certification a:hover {
+    transform: translateY(-5px);
+  }
+  
+  .certification-logo {
+    width: 100px; /* Adjust based on your logo size */
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .certification span {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  .certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+.animated-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+.animated-text .verb {
+    color: var(--primary-color);
+}
+
+.animated-text .rest {
+    color: var(--text-color);
+}
+ 
+.profile-img {
+    max-width: 300px;
+    height: auto;
+}

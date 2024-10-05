@@ -1,697 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JpDotFranca</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="./images/site-icon.png">
-    
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2TMJ166N84"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-2TMJ166N84');
-</script>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	
-
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">João Paulo França</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>Sobre</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Qualificação</span></a></li>
-	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Serviços</span></a></li>
-	          <!-- <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Habilidades</span></a></li>
-	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projetos</span></a></li>
-	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contato</span></a></li> -->
-	        </ul>
-	      </div>
-	    </div>
-	  </nav> 
-<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-	<div class="container">
-		<div class="row d-flex">
-			<div class="col-md-6 col-lg-5 d-flex">
-				<div class="img-about img d-flex align-items-stretch">
-					<div class="overlay"></div>
-					<div class="img d-flex align-self-stretch align-items-center"  style="background-image:url(images/RKCA5069.png); width: 60%;">
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-				<div class="row justify-content-start pb-3">
-			  <div class="col-md-12 heading-section ftco-animate">
-				<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-					<div class="text">
-						<h3>Olá!</h3>
-					  <h2 class="mt-4">Eu sou <span class="bold" style="color: #ffbd39; font-weight: bold;">João Paulo França</bold></h2>
-					  <h1 class="mb-4 mt-3">Engenheiro de Software</h1>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  <div class="counter-wrap ftco-animate d-flex mt-md-3">
-			<div class="text"> 
-				<p><a href="#" class="btn btn-primary py-3 px-3" onclick="downloadResume()">Baixar currículo</a></p>
-			</div>
-			<div class="col-md-8 col-lg-8 d-flex">
-				
-				<div class="img-about img d-flex align-items-stretch">
-					<div class="overlay"></div>
-					<div onclick="onCertificateClick()"  title="Confira a certificação" class="img d-flex align-self-stretch align-items-center"   style="cursor:pointer; background-image:url(images/AZ-900.png); width: 20%;">
-					</div> 
-				</div>
-			</div>
+    <link rel="icon" type="image/png" href="images/site-icon.png">
+	<link rel="stylesheet" href="style.css">
+	<script src="js/main.js"></script>
+</head>
+<body>
+    <header class="py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="display-4 fw-bold mb-0">João Paulo França</h1>
+		
+            <div class="d-flex align-items-center">
+                <select class="form-select language-select me-3" id="languageSelect">
+                    <option value="en">🇺🇸 EN</option> 
+                </select> 
+            </div>
+        </div>
+			<div class="card-body container d-flex justify-content-between align-items-center">
+				<div id="animatedText" class="animated-text"></div>
 		</div>
-	</div>
-	</div>
-</section>
+    </header>
 
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-    		<div class="row d-flex"> 
-    			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-    				<div class="row justify-content-start pb-3">
-		          <div class="col-md-12 heading-section ftco-animate">
-		          	<h1 class="big">Sobre</h1>
-		            <h2 class="mb-4">Sobre mim</h2>
-		            <p>Engenheiro de software que gosta de música.</p>
-		            <ul class="about-info mt-4 px-md-0 px-2">
-		            	<li class="d-flex"><span>Nome:</span> <span>João Paulo França</span></li>
-		            	<li class="d-flex"><span>Idade:</span> <span>30 anos</span></li>
-		            	<li class="d-flex"><span>Endereço:</span> <span>Porto Alegre - RS - Brasil</span></li>
-						<li class="d-flex"><span>Telefone: </span> 
-							<span class="input_copy_wrapper">
-								<div class="input_copy">
-								  <span class="txt">jpDotFranca@gmail.com</span>
-								  <span class="icon right" >
-								   <img src="http://clipground.com/images/copy-4.png" 
-										title="Copiar e-mail"
-										style="margin-left: 20px;">
-								  </span>
-								</div>	
-							</span>
-						</li> 						
-		            	<li class="d-flex"><span>Telefone: </span> 
-							<span>+55 51 98536-8933</span>
-						
-						<a href="https://wa.me/+5551998639405" 
-						   target="_blank" title="Me contate pelo WhatsApp" 
-						   style="position: fixed; margin-left: 55%; z-index: 999999999 !important; margin-right: 15px; box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.4); border-radius: 100px" >
-  								<svg width="42" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-								 <g clip-path="url(#clip0_1024_354)"><path d="M23.8759 4.06939C21.4959 1.68839 18.3316 0.253548 14.9723 0.0320463C11.613 -0.189455 8.28774 0.817483 5.61565 2.86535C2.94357 4.91323 1.10682 7.86244 0.447451 11.1638C-0.21192 14.4652 0.351026 17.8937 2.03146 20.8109L0.0625 28.0004L7.42006 26.0712C9.45505 27.1794 11.7353 27.7601 14.0524 27.7602H14.0583C16.8029 27.7599 19.4859 26.946 21.768 25.4212C24.0502 23.8965 25.829 21.7294 26.8798 19.1939C27.9305 16.6583 28.206 13.8682 27.6713 11.1761C27.1367 8.48406 25.8159 6.01095 23.8759 4.06939ZM14.0583 25.4169H14.0538C11.988 25.417 9.96008 24.8617 8.1825 23.8091L7.7611 23.5593L3.3945 24.704L4.56014 20.448L4.28546 20.0117C2.92594 17.8454 2.32491 15.2886 2.57684 12.7434C2.82877 10.1982 3.91938 7.80894 5.67722 5.95113C7.43506 4.09332 9.76045 2.87235 12.2878 2.48017C14.8152 2.08799 17.4013 2.54684 19.6395 3.78457C21.8776 5.02231 23.641 6.96875 24.6524 9.3179C25.6638 11.6671 25.8659 14.2857 25.2268 16.7622C24.5877 19.2387 23.1438 21.4326 21.122 22.999C19.1001 24.5655 16.6151 25.4156 14.0575 25.4157L14.0583 25.4169Z" fill="#E0E0E0"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6291 7.98363C10.3723 7.41271 10.1019 7.40123 9.85771 7.39143C9.65779 7.38275 9.42903 7.38331 9.20083 7.38331C9.0271 7.3879 8.8562 7.42837 8.69887 7.5022C8.54154 7.57602 8.40119 7.68159 8.28663 7.81227C7.899 8.17929 7.59209 8.62305 7.38547 9.11526C7.17884 9.60747 7.07704 10.1373 7.08655 10.6711C7.08655 12.3578 8.31519 13.9877 8.48655 14.2164C8.65791 14.4452 10.8581 18.0169 14.3425 19.3908C17.2382 20.5327 17.8276 20.3056 18.4562 20.2485C19.0848 20.1913 20.4843 19.4194 20.7701 18.6189C21.056 17.8183 21.0557 17.1323 20.9701 16.989C20.8844 16.8456 20.6559 16.7605 20.3129 16.5889C19.9699 16.4172 18.2849 15.5879 17.9704 15.4736C17.656 15.3594 17.4275 15.3023 17.199 15.6455C16.9705 15.9888 16.3139 16.7602 16.1137 16.9895C15.9135 17.2189 15.7136 17.2471 15.3709 17.0758C14.3603 16.6729 13.4275 16.0972 12.6143 15.3745C11.8648 14.6818 11.2221 13.8819 10.7072 13.0007C10.5073 12.6579 10.6857 12.472 10.8579 12.3007C11.0119 12.1472 11.2006 11.9005 11.3722 11.7003C11.5129 11.5271 11.6282 11.3346 11.7147 11.1289C11.7603 11.0343 11.7817 10.9299 11.7768 10.825C11.7719 10.7201 11.7409 10.6182 11.6867 10.5283C11.6001 10.3566 10.9337 8.66151 10.6291 7.98363Z" fill="white"></path><path d="M23.7628 4.02445C21.4107 1.66917 18.2825 0.249336 14.9611 0.0294866C11.6397 -0.190363 8.35161 0.804769 5.70953 2.82947C3.06745 4.85417 1.25154 7.77034 0.600156 11.0346C-0.051233 14.299 0.506321 17.6888 2.16894 20.5724L0.222656 27.6808L7.49566 25.7737C9.50727 26.8692 11.7613 27.4432 14.0519 27.4434H14.0577C16.7711 27.4436 19.4235 26.6392 21.6798 25.1321C23.936 23.6249 25.6947 21.4825 26.7335 18.9759C27.7722 16.4693 28.0444 13.711 27.5157 11.0497C26.9869 8.38835 25.6809 5.94358 23.7628 4.02445ZM14.0577 25.1269H14.0547C12.0125 25.1271 10.0078 24.5782 8.25054 23.5377L7.8339 23.2907L3.51686 24.4222L4.66906 20.2143L4.39774 19.7831C3.05387 17.6415 2.4598 15.1141 2.70892 12.598C2.95804 10.082 4.03622 7.72013 5.77398 5.88366C7.51173 4.04719 9.81051 2.84028 12.3089 2.45266C14.8074 2.06505 17.3638 2.5187 19.5763 3.74232C21.7888 4.96593 23.5319 6.89011 24.5317 9.21238C25.5314 11.5346 25.7311 14.1233 25.0993 16.5714C24.4675 19.0195 23.0401 21.1883 21.0414 22.7367C19.0427 24.2851 16.5861 25.1254 14.0577 25.1255V25.1269Z" fill="white"></path></g><defs><clipPath id="clip0_1024_354"><rect width="27.8748" height="28" fill="white" transform="translate(0.0625)"></rect></clipPath></defs></svg>
-						</a>
-					</li>
+    <nav class="bg-transparent">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" data-lang="nav_about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link" data-lang="nav_blog">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="py-4 flex-grow-1">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Sidebar -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img 
+                            src="/images/profile.png" 
+                            alt="João Paulo França" 
+                            class="card-img-top profile-img mx-auto d-block mt-3"
+                        >
+                        <div class="card-body">
+                            <h2 class="h5 fw-bold mb-3" data-lang="contact_info">Contact Information</h2>
+                            <ul class="list-unstyled mb-4">
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="#" class="text-decoration-none ms-2" id="email-link">
+                                        jpdotfranca@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/jpdotfranca" class="text-decoration-none" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-linkedin"></i> <span data-lang="linkedin_profile">LinkedIn Profile</span>
+                                    </a>
+                                </li>
+								<li>
+									<a href="https://wa.me/5551985368933" target="_blank" rel="noopener noreferrer">
+										<i class="fab fa-whatsapp"></i> WhatsApp
+									  </a>
+								</li>
+                                <li>
+                                    <a href="https://github.com/JpDotFranca" class="text-decoration-none" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> <span data-lang="github_profile">GitHub Profile</span>
+                                    </a>
+                                </li>
+                                <li class="text-muted" data-lang="location">Porto Alegre, Rio Grande do Sul, Brazil</li>
+                            </ul>
+                            
+                            <h2 class="h5 fw-bold mb-3" data-lang="top_skills">Top Skills</h2>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">C#</span>
+                                <span class="badge bg-primary">.NET Core</span>
+                                <span class="badge bg-primary">Azure</span>
+                                <span class="badge bg-primary">SQL Server</span>
+                                <span class="badge bg-primary">Software Architecture</span>
+                                <span class="badge bg-primary">Payment Integration</span>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="documents/Resume PT-BR.pdf" class="btn btn-primary" download>
+                                    <i class="fas fa-download me-2"></i>
+                                    <span data-lang="download_resume">Download Resume</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+				 
+                <div class="col-md-8"> 
 					
-		            </ul>
-		          </div>
-		        </div>
-	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
-              <div class="text"> 
-                <p><a href="#" class="btn btn-primary py-3 px-3" onclick="downloadResume()">Baixar currículo</a></p>
-              </div>
-	          </div>
-	        </div>
+					<!-- Your existing "About Me" card would go here -->
+                    <article class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="h3 fw-bold mb-4" data-lang="about_me">About Me</h2>
+                            <p class="mb-4" data-lang="intro">
+                                Software Engineer with over 8 years of experience, specialized in innovative solutions and cutting-edge technologies. 
+                                My expertise spans across various domains including software architecture, cloud computing, CI/CD pipelines, and payment integrations. 
+                                I excel in problem-solving, system design, and leveraging technologies like Azure, .NET Core, and SQL Server to deliver robust and scalable solutions.
+                            </p>
+                            <div class="section-separator">
+								<hr>
+							  </div>
+                            <div class="business-animation mb-4" id="businessAnimation"></div>
+                            
+                            <h3 class="h4 fw-bold mb-3" data-lang="key_projects">Key Projects and Experiences</h3>
+                            
+                            <div class="mb-4">
+                                <h4 class="h5 fw-bold" data-lang="project_1_title">Payment Integration Platform</h4>
+                                <p class="text-muted" data-lang="project_1_date">2020 - Present</p>
+                                <ul data-lang="project_1_description">
+                                    <li>Led the development and maintenance of a comprehensive payment integration platform.</li>
+                                    <li>Architected and implemented integrations with multiple payment methods including Pix, Bank Slips, and Credit Cards.</li>
+                                    <li>Managed integrations with credit card acquirers (Cielo, Safra) and issuing banks (Banco do Brasil, Santander, Bradesco).</li>
+                                    <li>Utilized Azure Cloud, Azure Service Bus, .NET Core, SQL Server, and GitHub Actions for scalable solutions.</li>
+                                    <li>Implemented monitoring using DataDog for proactive issue detection and resolution.</li>
+                                    <li>Led code reviews, technical analysis of business demands, and cloud architecture improvements.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h4 class="h5 fw-bold" data-lang="project_2_title">EFD Contribution Rectification Software</h4>
+                                <p class="text-muted" data-lang="project_2_date">2022 - 2024</p>
+                                <ul data-lang="project_2_description">
+                                    <li>Developed internal projects to accelerate manual processes in EFD Contribution rectification.</li>
+                                    <li>Adapted software to maintain similarity in necessary input and output for EFD delivery.</li>
+                                    <li>Created two versions: one for simpler "Simples Nacional" work and another with complex rules for scriptural rectification and overpayment.</li>
+                                    <li>Conducted requirement analysis, system development, and maintenance.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h4 class="h5 fw-bold" data-lang="project_3_title">Document Issuance Systems (eNota)</h4>
+                                <p class="text-muted" data-lang="project_3_date">2017 - 2020</p>
+                                <ul data-lang="project_3_description">
+                                    <li>Developed systems for issuing various fiscal documents (NFCe, CTe, NFSe, NFe).</li>
+                                    <li>Implemented offline functionality for NFCe using SQLite, .NET Framework multithread functions, and Electron-edge-js.</li>
+                                    <li>Utilized technologies including .NET Framework, SQL Server, IIS, AngularJS, Electron, Bootstrap, and jQuery.</li>
+                                    <li>Conducted analysis, development, validation, and improvement of system functionalities.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h4 class="h5 fw-bold" data-lang="project_4_title">Fiscal Recovery Application</h4>
+                                <p class="text-muted" data-lang="project_4_date">2019 - 2020</p>
+                                <ul data-lang="project_4_description">
+                                    <li>Created a fiscal recovery application using ReactJS, .NET Core, and SQL Server 2017 with JSON support.</li>
+                                    <li>Contributed from initial structuring to consolidation of main functionalities.</li>
+                                    <li>Collaborated with stakeholders and validated with management and accounting consultancy.</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h4 class="h5 fw-bold" data-lang="project_5_title">Language Practice Platform</h4>
+                                <p class="text-muted" data-lang="project_5_date">2019 - 2020</p>
+                                <ul data-lang="project_5_description">
+                                    <li>Developed a platform for language practice based on geographical location.</li>
+                                    <li>Utilized .NET Core, React Native, and SQL Server for both backend and mobile app development.</li>
+                                    <li>Implemented hosting on SmarterAsp and applied software architecture concepts for system structuring.</li>
+                                </ul>
+                            </div>
+
+							<div class="section-separator">
+								<hr>
+							  </div>
+
+                            <h3 class="h4 fw-bold mb-3" data-lang="certifications">Certifications and Courses</h3>
+                            <ul>
+                                <li>Microsoft Certified: Azure Fundamentals (March 2024 - March 2025)</li>
+                                <li>Formação Azure Developers (January 2024)</li>
+                                <li>Mentorship in Software Architecture with Elemar Jr (January 2024)</li>
+                            </ul>
+							<div class="certification">
+								<a href="https://learn.microsoft.com/pt-br/users/joaodotfranca/credentials/a094978949661ab2" target="_blank" rel="noopener noreferrer">
+								  <img src="images/AZ-900.png" alt="Microsoft Azure Fundamentals (AZ-900) Certification" class="certification-logo">
+								  <span>Microsoft Azure Fundamentals (AZ-900)</span>
+								</a>
+							  </div>
+                        </div>
+                    </article>
+                </div>
+				
+            </div>
         </div>
-    	</div>
-    </section>
-
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Qualificação</h1>
-            <h2 class="mb-4">Qualificação</h2>
-          </div>
-        </div>
-    		<div class="row">
-    			<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-    					<span class="date">2015-2016</span>
-    					<h2>Tecnólogo em Sistemas de Informação</h2>
-    					<span class="position">Universidade do Vale do Rio do Sinos</span>
-    					<p class="mt-4">A graduação em Análise e Desenvolvimento de Sistemas da Unisinos é a primeira da América Latina com ênfase em qualidade de processos de software. Isso significa aprender a pensar e executar estrategicamente todas as etapas do desenvolvimento, da análise de requisitos à documentação.</p>
-    				</div>
-    				
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2016-2021</span>
-    					<h2>Bacharelado em Sistemas de Informação</h2>
-    					<span class="position">PUCRS</span>
-    					<p class="mt-4">As disciplinas do curso abordam as áreas mais importantes da tecnologia da informação e também da administração, preparando os alunos para atuarem na indústria de software como gerentes de tecnologia, gerentes de projetos, analistas de teste, desenvolvedores de software, entre outros.</p>
-    				</div>  
-    			</div>
-
-				<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2023-2024</span>
-    					<h2>Mentoria em Arquitetura de Software com Elemar Jr</h2>
-    					<span class="position">EximiaCo</span>
-    					<p class="mt-4">Práticas, padrões & técnicas para Arquitetura de Software, de maneira efetiva, com base em cenários reais para profissionais envolvidos no projeto e implantação de software.</p>
-    				</div>  
-    			</div>
-
-				<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2024-2024</span>
-    					<h2>Formação Azure para Desenvolvedores</h2>
-    					<span class="position">Azure na Prática</span>
-    					<p class="mt-4">A Formação Azure Developer não é só um treinamento ou um curso, é uma jornada onde você vai sair do absoluto zero até o avançado em nos principais recursos do Azure.</p>
-    				</div>  
-    			</div>
-    		</div>
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5" onclick="downloadResume()">Baixar currículo</a></p>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
-    <section class="ftco-section" id="services-section">
-    	<div class="container">
-    		<div class="row justify-content-center py-5 mt-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Serviços</h1>
-            <h2 class="mb-4">Serviços</h2>
-            <p>Todos os serviços necessários para alcançar os objetivos do negócio com menor risco e custo.</p>
-          </div>
-        </div>
-    		<div class="row">
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-analysis"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Análise de Sistemas</h3>
-							</div>
-						</a>
-					</div> 
-
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-ideas"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Desenvolvimento de APIs</h3>
-							</div>
-						</a>
-					</div>
-
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-ideas"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Desenvolvimento Web</h3>
-							</div>
-						</a>
-					</div>
+    </main>
  
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<span class="icon">
-								<i class="flaticon-ideas"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-5">Integração entre Sistemas</h3>
-							</div>
-						</a>
-					</div>
-				</div>
-    	</div>
-    </section>
+	<!-- Footer Content -->
+	<footer class="bg-dark text-white py-3 mt-4">
+		<div class="container text-center">
+			<p class="mb-0" data-lang="footer">&copy; 2024 João Paulo França. All rights reserved.</p>
+		</div>
+	</footer>
 
-<!-- 		
-		<section class="ftco-section" id="skills-section">
-			<div class="container">
-				<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Skills</h1>
-            <h2 class="mb-4">My Skills</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
-        </div>
-				<div class="row">
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>Photoshop</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-							    <span>90%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>jQuery</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-							    <span>85%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>HTML5</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
-							    <span>95%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>CSS3</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-							    <span>90%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>WordPress</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
-							    <span>70%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 animate-box">
-						<div class="progress-wrap ftco-animate">
-							<h3>SEO</h3>
-							<div class="progress">
-							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-							  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-							    <span>80%</span>
-							  	</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-  -->
-<!-- 
-    <section class="ftco-section ftco-project" id="projects-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Our Projects</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
-        </div>
-    		<div class="row">
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-4.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-  				</div>
-  				<div class="col-md-8">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-5.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-  				</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Email copy functionality
+        document.getElementById('email-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            navigator.clipboard.writeText('jpdotfranca@gmail.com').then(function() {
+                alert('Email copied to clipboard!');
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        });
 
-    			<div class="col-md-8">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-1.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
+        // Theme toggle
+        const themeToggle = document.querySelector('.theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('light-mode');
+        });
 
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-6.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-	    					<span>Web Design</span>
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="row">
-    					<div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-2.jpg);">
-		    					<div class="overlay"></div>
-			    				<div class="text text-center p-4">
-			    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-			    					<span>Web Design</span>
-			    				</div>
-		    				</div>
-	    				</div>
-	    				<div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-3.jpg);">
-		    					<div class="overlay"></div>
-			    				<div class="text text-center p-4">
-			    					<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-			    					<span>Web Design</span>
-			    				</div>
-		    				</div>
-	    				</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </section> -->
+        // Language switch
+        const languageSelect = document.getElementById('languageSelect');
+        let translations;
 
-<!-- 
-    <section class="ftco-section" id="blog-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Blog</h1>
-            <h2 class="mb-4">Our Blog</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">June 21, 2019</span>
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">June 21, 2019</span>
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center mb-3 meta">
-	                <p class="mb-0">
-	                	<span class="mr-2">June 21, 2019</span>
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-<!-- 
-    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-    	<div class="container">
-				<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="100">0</strong>
-                <span>Awards</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <span>Complete Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="1200">0</strong>
-                <span>Happy Customers</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-<!-- 
-    <section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>I'm <span>Available</span> for freelancing</h2>
-						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-						<p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">Hire me</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
+        fetch('translations.json')
+            .then(response => response.json())
+            .then(data => {
+                translations = data;
+                languageSelect.addEventListener('change', (event) => {
+                    const lang = event.target.value;
+                    updateContent(lang);
+                });
+            });
 
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
-        </div>
+        function updateContent(lang) {
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                const key = element.getAttribute('data-lang');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+        }
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Website</h3>
-	            <p><a href="#">yoursite.com</a></p>
-	          </div>
-          </div>
-        </div>
+        // Code animation
+        const codeAnimation = document.getElementById('codeAnimation');
+        const codeSnippet = `
+public class PaymentProcessor
+{
+    public async Task<PaymentResult> ProcessPayment(PaymentRequest request)
+    {
+        // Validate request
+        if (!IsValidRequest(request))
+        {
+            return new PaymentResult { Success = false, Message = "Invalid request" };
+        }
 
-        <div class="row no-gutters block-9">
-          <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-              </div>
-            </form>
-          
-          </div>
+        // Process payment
+        var result = await _paymentGateway.ChargeAsync(request);
 
-          <div class="col-md-6 d-flex">
-          	<div class="img" style="background-image: url(images/about.jpg);"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-		 -->
-<!-- 
-    <footer class="ftco-footer ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">About</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Services</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
+        // Log result
+        _logger.LogInformation($"Payment processed: {result.TransactionId}");
 
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  <!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> </a> -->
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    
-  
+        return new PaymentResult
+        {
+            Success = result.Success,
+            TransactionId = result.TransactionId,
+            Message = result.Message
+        };
+    }
+}`;
 
-  <!-- loader -->
-  <!-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div> -->
-
-  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js" integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc" crossorigin="anonymous"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js" integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO" crossorigin="anonymous"></script>
-	
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-  <script src="js/site.js"></script>
-
-  </body>
+        let i = 0;
+        function typeCode() {
+            if (i < codeSnippet.length) {
+                codeAnimation.innerHTML += codeSnippet.charAt(i);
+                i++;
+                setTimeout(typeCode, 50);
+            }
+        }
+        typeCode();
+    </script>
+</body>
 </html>
