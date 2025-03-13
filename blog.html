@@ -1,93 +1,116 @@
 <!DOCTYPE html>
 <html lang="en" class="dark-mode">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>João Paulo França - Blog</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/site-icon.png">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/site-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="py-4">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="display-4 fw-bold mb-0">João Paulo França</h1>
-            <div class="d-flex align-items-center">
-                <select class="form-select language-select me-3" id="languageSelect">
-                    <option value="en">🇺🇸 EN</option>  
-                </select>
-                <div class="theme-toggle">
-                    <i class="fas fa-moon"></i> 
-                </div>
-            </div>
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="display-4 fw-bold mb-0">João Paulo França</h1>
+        <div class="d-flex align-items-center">
+          <select class="form-select language-select me-3" id="languageSelect">
+            <option value="en">🇺🇸 EN</option>
+          </select>
+          <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </div>
         </div>
+      </div>
     </header>
 
     <nav class="bg-transparent">
-        <div class="container">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link" data-lang="nav_about">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link active" data-lang="nav_blog">Blog</a>
-                </li>
-            </ul>
-        </div>
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" data-lang="nav_about"
+              >About Me</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active" data-lang="nav_blog">Blog</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <main class="py-4 flex-grow-1">
-        <div class="container">
-            <h1 class="mb-4" data-lang="blog_title">My Tech Blog</h1>
-            
-            <div class="blog-post">
-                <h2 data-lang="post_1_title">Exploring the Power of Azure Service Bus in Distributed Systems</h2>
-                <p class="date" data-lang="post_1_date">October 5, 2024</p>
-                <p data-lang="post_1_excerpt">In this post, we'll dive deep into how Azure Service Bus can enhance communication between microservices, improve scalability, and ensure message delivery in distributed systems.</p>
-                <a href="/blog/power-of-service-bus-5-10-24.html" class="btn btn-primary" data-lang="read_more">Read More</a>
-            </div>
- 
+      <div class="container">
+        <h1 class="mb-4" data-lang="blog_title">My Tech Blog</h1>
+
+        <div class="blog-post">
+          <h2 data-lang="post_1_title">
+            Exploring the Power of Azure Service Bus in Distributed Systems
+          </h2>
+          <p class="date" data-lang="post_1_date">October 5, 2024</p>
+          <p data-lang="post_1_excerpt">
+            In this post, we'll dive deep into how Azure Service Bus can enhance
+            communication between microservices, improve scalability, and ensure
+            message delivery in distributed systems.
+          </p>
+          <a
+            href="/blog/power-of-service-bus-5-10-24.html"
+            class="btn btn-primary"
+            data-lang="read_more"
+            >Read More</a
+          >
         </div>
+      </div>
     </main>
 
     <footer class="bg-dark text-white py-3 mt-4">
-        <div class="container text-center">
-            <p class="mb-0" data-lang="footer">&copy; 2024 João Paulo França. All rights reserved.</p>
-        </div>
+      <div class="container text-center">
+        <p class="mb-0" data-lang="footer">
+          &copy; 2025 João Paulo França. All rights reserved.
+        </p>
+      </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Theme toggle
-        const themeToggle = document.querySelector('.theme-toggle');
-        themeToggle.addEventListener('click', () => {
-            document.documentElement.classList.toggle('light-mode');
+      // Theme toggle
+      const themeToggle = document.querySelector(".theme-toggle");
+      themeToggle.addEventListener("click", () => {
+        document.documentElement.classList.toggle("light-mode");
+      });
+
+      // Language switch
+      const languageSelect = document.getElementById("languageSelect");
+      let translations;
+
+      fetch("translations.json")
+        .then((response) => response.json())
+        .then((data) => {
+          translations = data;
+          languageSelect.addEventListener("change", (event) => {
+            const lang = event.target.value;
+            updateContent(lang);
+          });
         });
 
-        // Language switch
-        const languageSelect = document.getElementById('languageSelect');
-        let translations;
-
-        fetch('translations.json')
-            .then(response => response.json())
-            .then(data => {
-                translations = data;
-                languageSelect.addEventListener('change', (event) => {
-                    const lang = event.target.value;
-                    updateContent(lang);
-                });
-            });
-
-        function updateContent(lang) {
-            document.querySelectorAll('[data-lang]').forEach(element => {
-                const key = element.getAttribute('data-lang');
-                if (translations[lang] && translations[lang][key]) {
-                    element.textContent = translations[lang][key];
-                }
-            });
-        }
+      function updateContent(lang) {
+        document.querySelectorAll("[data-lang]").forEach((element) => {
+          const key = element.getAttribute("data-lang");
+          if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
+          }
+        });
+      }
     </script>
-</body>
+  </body>
 </html>

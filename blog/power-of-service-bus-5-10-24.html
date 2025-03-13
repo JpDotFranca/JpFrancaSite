@@ -1,92 +1,174 @@
 <!DOCTYPE html>
 <html lang="en" class="dark-mode">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Azure Service Bus: Enhancing Distributed Systems - João Paulo França</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../images/site-icon.png">
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Introduction to Azure Service Bus: Enhancing Distributed Systems - João
+      Paulo França
+    </title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="../images/site-icon.png" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
     <header class="py-4">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="display-4 fw-bold mb-0">João Paulo França</h1>
-            <div class="d-flex align-items-center">
-                <select class="form-select language-select me-3" id="languageSelect">
-                    <option value="en">🇺🇸 EN</option> 
-                </select>
-                <div class="theme-toggle">
-                    <i class="fas fa-moon"></i> 
-                </div>
-            </div>
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="display-4 fw-bold mb-0">João Paulo França</h1>
+        <div class="d-flex align-items-center">
+          <select class="form-select language-select me-3" id="languageSelect">
+            <option value="en">🇺🇸 EN</option>
+          </select>
+          <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </div>
         </div>
+      </div>
     </header>
 
     <nav class="bg-transparent">
-        <div class="container">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="../index.html" class="nav-link" data-lang="nav_about">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../blog.html" class="nav-link" data-lang="nav_blog">Blog</a>
-                </li>
-            </ul>
-        </div>
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link" data-lang="nav_about"
+              >About Me</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="../blog.html" class="nav-link" data-lang="nav_blog"
+              >Blog</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <main class="py-4 flex-grow-1">
-        <div class="container">
-            <article class="blog-content">
-                <h1>Introduction to Azure Service Bus: Enhancing Distributed Systems</h1>
-                <p class="text-muted"><em>October 5, 2024</em></p>
+      <div class="container">
+        <article class="blog-content">
+          <h1>
+            Introduction to Azure Service Bus: Enhancing Distributed Systems
+          </h1>
+          <p class="text-muted"><em>October 5, 2024</em></p>
 
-                <p>Hello, fellow developers and cloud enthusiasts! João Paulo França here, bringing you insights from my experience with distributed systems development. Today, we're introducing Azure Service Bus, a powerful tool that's changing how we handle messaging in cloud-based applications.</p>
+          <p>
+            Hello, fellow developers and cloud enthusiasts! João Paulo França
+            here, bringing you insights from my experience with distributed
+            systems development. Today, we're introducing Azure Service Bus, a
+            powerful tool that's changing how we handle messaging in cloud-based
+            applications.
+          </p>
 
-                <h2>The Challenge of Distributed Communication</h2>
-                <p>In distributed systems, effective communication between components is crucial. As systems become more complex, managing this communication can be challenging. Azure Service Bus, Microsoft's fully managed enterprise message broker, offers a solution to this challenge.</p>
+          <h2>The Challenge of Distributed Communication</h2>
+          <p>
+            In distributed systems, effective communication between components
+            is crucial. As systems become more complex, managing this
+            communication can be challenging. Azure Service Bus, Microsoft's
+            fully managed enterprise message broker, offers a solution to this
+            challenge.
+          </p>
 
-                <h2>Azure Service Bus: Key Concepts</h2>
-                <p>Let's explore the core components that make Azure Service Bus valuable:</p>
+          <h2>Azure Service Bus: Key Concepts</h2>
+          <p>
+            Let's explore the core components that make Azure Service Bus
+            valuable:
+          </p>
 
-                <h3>1. Queues</h3>
-                <p>Queues provide first-in, first-out (FIFO) message delivery to one or more consumers. They're useful for decoupling applications and increasing reliability.</p>
+          <h3>1. Queues</h3>
+          <p>
+            Queues provide first-in, first-out (FIFO) message delivery to one or
+            more consumers. They're useful for decoupling applications and
+            increasing reliability.
+          </p>
 
-                <h3>2. Topics and Subscriptions</h3>
-                <p>Topics allow you to publish messages to multiple subscriptions, enabling more complex messaging scenarios. This feature supports publish-subscribe patterns effectively.</p>
+          <h3>2. Topics and Subscriptions</h3>
+          <p>
+            Topics allow you to publish messages to multiple subscriptions,
+            enabling more complex messaging scenarios. This feature supports
+            publish-subscribe patterns effectively.
+          </p>
 
-                <h3>3. Sessions</h3>
-                <p>Sessions ensure FIFO guaranteed message ordering and exclusive access to sequences of related messages. They're important for scenarios requiring strict ordering.</p>
+          <h3>3. Sessions</h3>
+          <p>
+            Sessions ensure FIFO guaranteed message ordering and exclusive
+            access to sequences of related messages. They're important for
+            scenarios requiring strict ordering.
+          </p>
 
-                <h3>4. Filters and Actions</h3>
-                <p>Filters allow subscribers to define which messages they want to receive. Actions enable message properties to be modified after a message is received but before it's delivered to the subscriber.</p>
+          <h3>4. Filters and Actions</h3>
+          <p>
+            Filters allow subscribers to define which messages they want to
+            receive. Actions enable message properties to be modified after a
+            message is received but before it's delivered to the subscriber.
+          </p>
 
-                <h3>5. Message Properties</h3>
-                <p>Azure Service Bus messages have various properties such as MessageId, SequenceNumber, To, ReplyTo, TimeToLive, ScheduledEnqueueTimeUtc, and more. These properties help in message routing, scheduling, and processing.</p>
+          <h3>5. Message Properties</h3>
+          <p>
+            Azure Service Bus messages have various properties such as
+            MessageId, SequenceNumber, To, ReplyTo, TimeToLive,
+            ScheduledEnqueueTimeUtc, and more. These properties help in message
+            routing, scheduling, and processing.
+          </p>
 
-                <h3>6. Message Handling Concepts</h3>
-                <ul>
-                    <li><strong>Active Messages:</strong> Messages that are ready to be delivered to consumers.</li>
-                    <li><strong>Scheduled Messages:</strong> Messages set to become available for processing at a specified future time.</li>
-                    <li><strong>Dead-Letter Queue:</strong> A sub-queue that holds messages that can't be processed successfully. This feature is crucial for handling errors and exceptions.</li>
-                </ul>
+          <h3>6. Message Handling Concepts</h3>
+          <ul>
+            <li>
+              <strong>Active Messages:</strong> Messages that are ready to be
+              delivered to consumers.
+            </li>
+            <li>
+              <strong>Scheduled Messages:</strong> Messages set to become
+              available for processing at a specified future time.
+            </li>
+            <li>
+              <strong>Dead-Letter Queue:</strong> A sub-queue that holds
+              messages that can't be processed successfully. This feature is
+              crucial for handling errors and exceptions.
+            </li>
+          </ul>
 
-                <h2>Benefits of Using Message Brokers</h2>
-                <p>Using a message broker like Azure Service Bus for handling callbacks offers several advantages over direct API request processing:</p>
-                <ol>
-                    <li><strong>Decoupling:</strong> Services can communicate without direct dependencies.</li>
-                    <li><strong>Scalability:</strong> Easily scale message processing independently of message production.</li>
-                    <li><strong>Reliability:</strong> Messages persist even if the processing service is temporarily unavailable.</li>
-                    <li><strong>Load Leveling:</strong> Handle traffic spikes more effectively by queuing messages.</li>
-                </ol>
+          <h2>Benefits of Using Message Brokers</h2>
+          <p>
+            Using a message broker like Azure Service Bus for handling callbacks
+            offers several advantages over direct API request processing:
+          </p>
+          <ol>
+            <li>
+              <strong>Decoupling:</strong> Services can communicate without
+              direct dependencies.
+            </li>
+            <li>
+              <strong>Scalability:</strong> Easily scale message processing
+              independently of message production.
+            </li>
+            <li>
+              <strong>Reliability:</strong> Messages persist even if the
+              processing service is temporarily unavailable.
+            </li>
+            <li>
+              <strong>Load Leveling:</strong> Handle traffic spikes more
+              effectively by queuing messages.
+            </li>
+          </ol>
 
-                <h2>Integration with Azure Functions</h2>
-                <p>Azure Service Bus integrates well with Azure Functions, allowing for efficient, event-driven processing. Here's a simple example:</p>
+          <h2>Integration with Azure Functions</h2>
+          <p>
+            Azure Service Bus integrates well with Azure Functions, allowing for
+            efficient, event-driven processing. Here's a simple example:
+          </p>
 
-                <pre><code class="language-csharp">
+          <pre><code class="language-csharp">
 [FunctionName("ProcessServiceBusMessage")]
 public static void Run(
     [ServiceBusTrigger("myqueue", Connection = "ServiceBusConnection")] string myQueueItem,
@@ -96,87 +178,157 @@ public static void Run(
 }
                 </code></pre>
 
-                <p>This function automatically processes messages from a Service Bus queue, offering better performance and easier configuration compared to the older WebJobs SDK.</p>
+          <p>
+            This function automatically processes messages from a Service Bus
+            queue, offering better performance and easier configuration compared
+            to the older WebJobs SDK.
+          </p>
 
-                <h2>Azure Service Bus vs. RabbitMQ</h2>
-                <p>While RabbitMQ is a solid open-source alternative, Azure Service Bus offers several advantages:</p>
-                <ol>
-                    <li>Fully managed service (no need to manage infrastructure)</li>
-                    <li>Native integration with other Azure services</li>
-                    <li>Built-in security features (Azure AD integration, encryption at rest)</li>
-                    <li>Automatic scaling in the Premium tier</li>
-                </ol>
-                <p>However, RabbitMQ might be preferred for on-premises solutions or multi-cloud strategies.</p>
+          <h2>Azure Service Bus vs. RabbitMQ</h2>
+          <p>
+            While RabbitMQ is a solid open-source alternative, Azure Service Bus
+            offers several advantages:
+          </p>
+          <ol>
+            <li>Fully managed service (no need to manage infrastructure)</li>
+            <li>Native integration with other Azure services</li>
+            <li>
+              Built-in security features (Azure AD integration, encryption at
+              rest)
+            </li>
+            <li>Automatic scaling in the Premium tier</li>
+          </ol>
+          <p>
+            However, RabbitMQ might be preferred for on-premises solutions or
+            multi-cloud strategies.
+          </p>
 
-                <h3>Concept Comparison</h3>
-                <ul>
-                    <li>In Azure Service Bus, "Topics" with "Subscriptions" provide publish-subscribe functionality.</li>
-                    <li>In RabbitMQ, "Exchanges" (particularly the "fanout" type) with bound queues offer similar functionality.</li>
-                </ul>
-                <p>The main difference is in how messages are routed:</p>
-                <ul>
-                    <li>Azure Service Bus Topics use a "push" model to subscriptions.</li>
-                    <li>RabbitMQ Exchanges use a "binding" model to route messages to queues.</li>
-                </ul>
+          <h3>Concept Comparison</h3>
+          <ul>
+            <li>
+              In Azure Service Bus, "Topics" with "Subscriptions" provide
+              publish-subscribe functionality.
+            </li>
+            <li>
+              In RabbitMQ, "Exchanges" (particularly the "fanout" type) with
+              bound queues offer similar functionality.
+            </li>
+          </ul>
+          <p>The main difference is in how messages are routed:</p>
+          <ul>
+            <li>
+              Azure Service Bus Topics use a "push" model to subscriptions.
+            </li>
+            <li>
+              RabbitMQ Exchanges use a "binding" model to route messages to
+              queues.
+            </li>
+          </ul>
 
-                <h2>Service Bus Explorer: A Helpful Tool</h2>
-                <p>The Service Bus Explorer desktop application is very useful for developers. It allows you to manage and test your Service Bus resources without using the Azure portal. You can send messages, inspect queues, and troubleshoot issues with a user-friendly interface.</p>
-                <p>You can find the Service Bus Explorer on GitHub: <a href="https://github.com/paolosalvatori/ServiceBusExplorer" target="_blank">https://github.com/paolosalvatori/ServiceBusExplorer</a></p>
+          <h2>Service Bus Explorer: A Helpful Tool</h2>
+          <p>
+            The Service Bus Explorer desktop application is very useful for
+            developers. It allows you to manage and test your Service Bus
+            resources without using the Azure portal. You can send messages,
+            inspect queues, and troubleshoot issues with a user-friendly
+            interface.
+          </p>
+          <p>
+            You can find the Service Bus Explorer on GitHub:
+            <a
+              href="https://github.com/paolosalvatori/ServiceBusExplorer"
+              target="_blank"
+              >https://github.com/paolosalvatori/ServiceBusExplorer</a
+            >
+          </p>
 
-                <h2>Sending Messages Through API Calls</h2>
-                <p>Azure Service Bus provides REST APIs that allow you to send messages directly through HTTP requests. This feature is useful when you need to integrate with systems that can't use the official SDK or when you want to send messages from environments where installing additional libraries is challenging.</p>
+          <h2>Sending Messages Through API Calls</h2>
+          <p>
+            Azure Service Bus provides REST APIs that allow you to send messages
+            directly through HTTP requests. This feature is useful when you need
+            to integrate with systems that can't use the official SDK or when
+            you want to send messages from environments where installing
+            additional libraries is challenging.
+          </p>
 
-                <h2>The Importance of Event-Driven Architecture</h2>
-                <p>Working with Azure Service Bus highlights the importance of event-driven architecture. It's not just about using a message broker; it's about designing systems that can react to changes and scale effectively.</p>
+          <h2>The Importance of Event-Driven Architecture</h2>
+          <p>
+            Working with Azure Service Bus highlights the importance of
+            event-driven architecture. It's not just about using a message
+            broker; it's about designing systems that can react to changes and
+            scale effectively.
+          </p>
 
-                <h2>Conclusion: Embracing Robust Messaging in Distributed Systems</h2>
-                <p>Azure Service Bus is a fundamental building block for creating reliable, scalable distributed systems. Whether you're processing payments, managing IoT device communication, or building a microservices architecture, Service Bus provides the reliability and flexibility you need.</p>
+          <h2>Conclusion: Embracing Robust Messaging in Distributed Systems</h2>
+          <p>
+            Azure Service Bus is a fundamental building block for creating
+            reliable, scalable distributed systems. Whether you're processing
+            payments, managing IoT device communication, or building a
+            microservices architecture, Service Bus provides the reliability and
+            flexibility you need.
+          </p>
 
-                <p>Remember, this post is an introduction to Azure Service Bus. There's much more to explore, including advanced features, best practices, and real-world implementation strategies.</p>
+          <p>
+            Remember, this post is an introduction to Azure Service Bus. There's
+            much more to explore, including advanced features, best practices,
+            and real-world implementation strategies.
+          </p>
 
-                <p>Happy coding, and may your messages always reach their destination!</p>
+          <p>
+            Happy coding, and may your messages always reach their destination!
+          </p>
 
-                <p><em>P.S. If you want to discuss Azure, .NET, or cloud services, feel free to connect with me on <a href="https://www.linkedin.com/in/jpdotfranca" target="_blank">LinkedIn</a>. I'm always happy to chat about technology!</em></p>
-            </article>
-        </div>
+          <p>
+            <em
+              >P.S. If you want to discuss Azure, .NET, or cloud services, feel
+              free to connect with me on
+              <a href="https://www.linkedin.com/in/jpdotfranca" target="_blank"
+                >LinkedIn</a
+              >. I'm always happy to chat about technology!</em
+            >
+          </p>
+        </article>
+      </div>
     </main>
 
     <footer class="bg-dark text-white py-3 mt-4">
-        <div class="container text-center">
-            <p class="mb-0" data-lang="footer">&copy; 2024 João Paulo França. All rights reserved.</p>
-        </div>
+      <div class="container text-center">
+        <p class="mb-0" data-lang="footer">
+          &copy; 2025 João Paulo França. All rights reserved.
+        </p>
+      </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Theme toggle
-        const themeToggle = document.querySelector('.theme-toggle');
-        themeToggle.addEventListener('click', () => {
-            document.documentElement.classList.toggle('light-mode');
+      // Theme toggle
+      const themeToggle = document.querySelector(".theme-toggle");
+      themeToggle.addEventListener("click", () => {
+        document.documentElement.classList.toggle("light-mode");
+      });
+
+      // Language switch
+      const languageSelect = document.getElementById("languageSelect");
+      let translations;
+
+      fetch("../translations.json")
+        .then((response) => response.json())
+        .then((data) => {
+          translations = data;
+          languageSelect.addEventListener("change", (event) => {
+            const lang = event.target.value;
+            updateContent(lang);
+          });
         });
 
-        // Language switch
-        const languageSelect = document.getElementById('languageSelect');
-        let translations;
-
-        fetch('../translations.json')
-            .then(response => response.json())
-            .then(data => {
-                translations = data;
-                languageSelect.addEventListener('change', (event) => {
-                    const lang = event.target.value;
-                    updateContent(lang);
-                });
-            });
-
-        function updateContent(lang) {
-            document.querySelectorAll('[data-lang]').forEach(element => {
-                const key = element.getAttribute('data-lang');
-                if (translations[lang] && translations[lang][key]) {
-                    element.textContent = translations[lang][key];
-                }
-            });
-        }
+      function updateContent(lang) {
+        document.querySelectorAll("[data-lang]").forEach((element) => {
+          const key = element.getAttribute("data-lang");
+          if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
+          }
+        });
+      }
     </script>
-</body>
+  </body>
 </html>
