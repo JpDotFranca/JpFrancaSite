@@ -1,253 +1,410 @@
 <!DOCTYPE html>
 <html lang="en" class="dark-mode">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JpDotFranca</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/site-icon.png">
-	<link rel="stylesheet" href="style.css">
-	<script src="js/main.js"></script>
-</head>
-<body>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/site-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
     <header class="py-4">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="display-4 fw-bold mb-0">João Paulo França</h1>
-		
-            <div class="d-flex align-items-center">
-                <select class="form-select language-select me-3" id="languageSelect">
-                    <option value="en">🇺🇸 EN</option> 
-                </select> 
-            </div>
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="display-4 fw-bold mb-0">João Paulo França</h1>
+
+        <div class="d-flex align-items-center">
+          <select class="form-select language-select me-3" id="languageSelect">
+            <option value="en">🇺🇸 EN</option>
+          </select>
         </div>
-			<div class="card-body container d-flex justify-content-between align-items-center">
-				<div id="animatedText" class="animated-text"></div>
-		</div>
+      </div>
+      <div
+        class="card-body container d-flex justify-content-between align-items-center"
+      >
+        <div id="animatedText" class="animated-text"></div>
+      </div>
     </header>
 
     <nav class="bg-transparent">
-        <div class="container">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active" data-lang="nav_about">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a href="blog.html" class="nav-link" data-lang="nav_blog">Blog</a>
-                </li>
-            </ul>
-        </div>
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" data-lang="nav_about"
+              >About Me</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link" data-lang="nav_blog">Blog</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <main class="py-4 flex-grow-1">
-        <div class="container">
-            <div class="row g-4">
-                <!-- Sidebar -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img 
-                            src="/images/profile.png" 
-                            alt="João Paulo França" 
-                            class="card-img-top profile-img mx-auto d-block mt-3"
-                        >
-                        <div class="card-body">
-                            <h2 class="h5 fw-bold mb-3" data-lang="contact_info">Contact Information</h2>
-                            <ul class="list-unstyled mb-4">
-                                <li>
-                                    <i class="fas fa-envelope"></i>
-                                    <a href="#" class="text-decoration-none ms-2" id="email-link">
-                                        jpdotfranca@gmail.com
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/jpdotfranca" class="text-decoration-none" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-linkedin"></i> <span data-lang="linkedin_profile">LinkedIn Profile</span>
-                                    </a>
-                                </li>
-								<li>
-									<a href="https://wa.me/5551985368933" target="_blank" rel="noopener noreferrer">
-										<i class="fab fa-whatsapp"></i> WhatsApp
-									  </a>
-								</li>
-                                <li>
-                                    <a href="https://github.com/JpDotFranca" class="text-decoration-none" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-github"></i> <span data-lang="github_profile">GitHub Profile</span>
-                                    </a>
-                                </li>
-                                <li class="text-muted" data-lang="location">Porto Alegre, Rio Grande do Sul, Brazil</li>
-                            </ul>
-                            
-                            <h2 class="h5 fw-bold mb-3" data-lang="top_skills">Top Skills</h2>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-primary">C#</span>
-                                <span class="badge bg-primary">.NET Core</span>
-                                <span class="badge bg-primary">Azure</span>
-                                <span class="badge bg-primary">SQL Server</span>
-                                <span class="badge bg-primary">Software Architecture</span>
-                                <span class="badge bg-primary">Payment Integration</span>
-                            </div>
+      <div class="container">
+        <div class="row g-4">
+          <!-- Sidebar -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="/images/profile.png"
+                alt="João Paulo França"
+                class="card-img-top profile-img mx-auto d-block mt-3"
+              />
+              <div class="card-body">
+                <h2 class="h5 fw-bold mb-3" data-lang="contact_info">
+                  Contact Information
+                </h2>
+                <ul class="list-unstyled mb-4">
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <a
+                      href="#"
+                      class="text-decoration-none ms-2"
+                      id="email-link"
+                    >
+                      jpdotfranca@gmail.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/jpdotfranca"
+                      class="text-decoration-none"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fab fa-linkedin"></i>
+                      <span data-lang="linkedin_profile">LinkedIn Profile</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://wa.me/5551985368933"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/JpDotFranca"
+                      class="text-decoration-none"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fab fa-github"></i>
+                      <span data-lang="github_profile">GitHub Profile</span>
+                    </a>
+                  </li>
+                  <li class="text-muted" data-lang="location">
+                    Porto Alegre, Rio Grande do Sul, Brazil
+                  </li>
+                </ul>
 
-                            <div class="mt-4">
-                                <a href="documents/Resume PT-BR.pdf" class="btn btn-primary" download>
-                                    <i class="fas fa-download me-2"></i>
-                                    <span data-lang="download_resume">Download Resume</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <h2 class="h5 fw-bold mb-3" data-lang="top_skills">
+                  Top Skills
+                </h2>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-primary">C#</span>
+                  <span class="badge bg-primary">.NET Core</span>
+                  <span class="badge bg-primary">Azure</span>
+                  <span class="badge bg-primary">SQL Server</span>
+                  <span class="badge bg-primary">Software Architecture</span>
+                  <span class="badge bg-primary">Payment Integration</span>
                 </div>
 
-                <!-- Main Content -->
-				 
-                <div class="col-md-8"> 
-					
-					<!-- Your existing "About Me" card would go here -->
-                    <article class="card mb-4">
-                        <div class="card-body">
-                            <h2 class="h3 fw-bold mb-4" data-lang="about_me">About Me</h2>
-                            <p class="mb-4" data-lang="intro">
-                                Software Engineer with over 8 years of experience, specialized in innovative solutions and cutting-edge technologies. 
-                                My expertise spans across various domains including software architecture, cloud computing, CI/CD pipelines, and payment integrations. 
-                                I excel in problem-solving, system design, and leveraging technologies like Azure, .NET Core, and SQL Server to deliver robust and scalable solutions.
-                            </p>
-                            <div class="section-separator">
-								<hr>
-							  </div>
-                            <div class="business-animation mb-4" id="businessAnimation"></div>
-                            
-                            <h3 class="h4 fw-bold mb-3" data-lang="key_projects">Key Projects and Experiences</h3>
-                            
-                            <div class="mb-4">
-                                <h4 class="h5 fw-bold" data-lang="project_1_title">Payment Integration Platform</h4>
-                                <p class="text-muted" data-lang="project_1_date">2020 - Present</p>
-                                <ul data-lang="project_1_description">
-                                    <li>Led the development and maintenance of a comprehensive payment integration platform.</li>
-                                    <li>Architected and implemented integrations with multiple payment methods including Pix, Bank Slips, and Credit Cards.</li>
-                                    <li>Managed integrations with credit card acquirers (Cielo, Safra) and issuing banks (Banco do Brasil, Santander, Bradesco).</li>
-                                    <li>Utilized Azure Cloud, Azure Service Bus, .NET Core, SQL Server, and GitHub Actions for scalable solutions.</li>
-                                    <li>Implemented monitoring using DataDog for proactive issue detection and resolution.</li>
-                                    <li>Led code reviews, technical analysis of business demands, and cloud architecture improvements.</li>
-                                </ul>
-                            </div>
-
-                            <div class="mb-4">
-                                <h4 class="h5 fw-bold" data-lang="project_2_title">EFD Contribution Rectification Software</h4>
-                                <p class="text-muted" data-lang="project_2_date">2022 - 2024</p>
-                                <ul data-lang="project_2_description">
-                                    <li>Developed internal projects to accelerate manual processes in EFD Contribution rectification.</li>
-                                    <li>Adapted software to maintain similarity in necessary input and output for EFD delivery.</li>
-                                    <li>Created two versions: one for simpler "Simples Nacional" work and another with complex rules for scriptural rectification and overpayment.</li>
-                                    <li>Conducted requirement analysis, system development, and maintenance.</li>
-                                </ul>
-                            </div>
-
-                            <div class="mb-4">
-                                <h4 class="h5 fw-bold" data-lang="project_3_title">Document Issuance Systems (eNota)</h4>
-                                <p class="text-muted" data-lang="project_3_date">2017 - 2020</p>
-                                <ul data-lang="project_3_description">
-                                    <li>Developed systems for issuing various fiscal documents (NFCe, CTe, NFSe, NFe).</li>
-                                    <li>Implemented offline functionality for NFCe using SQLite, .NET Framework multithread functions, and Electron-edge-js.</li>
-                                    <li>Utilized technologies including .NET Framework, SQL Server, IIS, AngularJS, Electron, Bootstrap, and jQuery.</li>
-                                    <li>Conducted analysis, development, validation, and improvement of system functionalities.</li>
-                                </ul>
-                            </div>
-
-                            <div class="mb-4">
-                                <h4 class="h5 fw-bold" data-lang="project_4_title">Fiscal Recovery Application</h4>
-                                <p class="text-muted" data-lang="project_4_date">2019 - 2020</p>
-                                <ul data-lang="project_4_description">
-                                    <li>Created a fiscal recovery application using ReactJS, .NET Core, and SQL Server 2017 with JSON support.</li>
-                                    <li>Contributed from initial structuring to consolidation of main functionalities.</li>
-                                    <li>Collaborated with stakeholders and validated with management and accounting consultancy.</li>
-                                </ul>
-                            </div>
-
-                            <div class="mb-4">
-                                <h4 class="h5 fw-bold" data-lang="project_5_title">Language Practice Platform</h4>
-                                <p class="text-muted" data-lang="project_5_date">2019 - 2020</p>
-                                <ul data-lang="project_5_description">
-                                    <li>Developed a platform for language practice based on geographical location.</li>
-                                    <li>Utilized .NET Core, React Native, and SQL Server for both backend and mobile app development.</li>
-                                    <li>Implemented hosting on SmarterAsp and applied software architecture concepts for system structuring.</li>
-                                </ul>
-                            </div>
-
-							<div class="section-separator">
-								<hr>
-							  </div>
-
-                            <h3 class="h4 fw-bold mb-3" data-lang="certifications">Certifications and Courses</h3>
-                            <ul>
-                                <li>Microsoft Certified: Azure Fundamentals (March 2024 - March 2025)</li>
-                                <li>Formação Azure Developers (January 2024)</li>
-                                <li>Mentorship in Software Architecture with Elemar Jr (January 2024)</li>
-                            </ul>
-							<div class="certification">
-								<a href="https://learn.microsoft.com/pt-br/users/joaodotfranca/credentials/a094978949661ab2" target="_blank" rel="noopener noreferrer">
-								  <img src="images/AZ-900.png" alt="Microsoft Azure Fundamentals (AZ-900) Certification" class="certification-logo">
-								  <span>Microsoft Azure Fundamentals (AZ-900)</span>
-								</a>
-							  </div>
-                        </div>
-                    </article>
+                <div class="mt-4">
+                  <a
+                    href="documents/Resume PT-BR.pdf"
+                    class="btn btn-primary"
+                    download
+                  >
+                    <i class="fas fa-download me-2"></i>
+                    <span data-lang="download_resume">Download Resume</span>
+                  </a>
                 </div>
-				
+              </div>
             </div>
+          </div>
+
+          <!-- Main Content -->
+
+          <div class="col-md-8">
+            <!-- Your existing "About Me" card would go here -->
+            <article class="card mb-4">
+              <div class="card-body">
+                <h2 class="h3 fw-bold mb-4" data-lang="about_me">About Me</h2>
+                <p class="mb-4" data-lang="intro">
+                  Software Engineer with over 8 years of experience, specialized
+                  in innovative solutions and cutting-edge technologies. My
+                  expertise spans across various domains including software
+                  architecture, cloud computing, CI/CD pipelines, and payment
+                  integrations. I excel in problem-solving, system design, and
+                  leveraging technologies like Azure, .NET Core, and SQL Server
+                  to deliver robust and scalable solutions.
+                </p>
+                <div class="section-separator">
+                  <hr />
+                </div>
+                <div
+                  class="business-animation mb-4"
+                  id="businessAnimation"
+                ></div>
+
+                <h3 class="h4 fw-bold mb-3" data-lang="key_projects">
+                  Key Projects and Experiences
+                </h3>
+
+                <div class="mb-4">
+                  <h4 class="h5 fw-bold" data-lang="project_1_title">
+                    Payment Integration Platform
+                  </h4>
+                  <p class="text-muted" data-lang="project_1_date">
+                    2020 - Present
+                  </p>
+                  <ul data-lang="project_1_description">
+                    <li>
+                      Led the development and maintenance of a comprehensive
+                      payment integration platform.
+                    </li>
+                    <li>
+                      Architected and implemented integrations with multiple
+                      payment methods including Pix, Bank Slips, and Credit
+                      Cards.
+                    </li>
+                    <li>
+                      Managed integrations with credit card acquirers (Cielo,
+                      Safra) and issuing banks (Banco do Brasil, Santander,
+                      Bradesco).
+                    </li>
+                    <li>
+                      Utilized Azure Cloud, Azure Service Bus, .NET Core, SQL
+                      Server, and GitHub Actions for scalable solutions.
+                    </li>
+                    <li>
+                      Implemented monitoring using DataDog for proactive issue
+                      detection and resolution.
+                    </li>
+                    <li>
+                      Led code reviews, technical analysis of business demands,
+                      and cloud architecture improvements.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mb-4">
+                  <h4 class="h5 fw-bold" data-lang="project_2_title">
+                    EFD Contribution Rectification Software
+                  </h4>
+                  <p class="text-muted" data-lang="project_2_date">
+                    2022 - 2024
+                  </p>
+                  <ul data-lang="project_2_description">
+                    <li>
+                      Developed internal projects to accelerate manual processes
+                      in EFD Contribution rectification.
+                    </li>
+                    <li>
+                      Adapted software to maintain similarity in necessary input
+                      and output for EFD delivery.
+                    </li>
+                    <li>
+                      Created two versions: one for simpler "Simples Nacional"
+                      work and another with complex rules for scriptural
+                      rectification and overpayment.
+                    </li>
+                    <li>
+                      Conducted requirement analysis, system development, and
+                      maintenance.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mb-4">
+                  <h4 class="h5 fw-bold" data-lang="project_3_title">
+                    Document Issuance Systems (eNota)
+                  </h4>
+                  <p class="text-muted" data-lang="project_3_date">
+                    2017 - 2020
+                  </p>
+                  <ul data-lang="project_3_description">
+                    <li>
+                      Developed systems for issuing various fiscal documents
+                      (NFCe, CTe, NFSe, NFe).
+                    </li>
+                    <li>
+                      Implemented offline functionality for NFCe using SQLite,
+                      .NET Framework multithread functions, and
+                      Electron-edge-js.
+                    </li>
+                    <li>
+                      Utilized technologies including .NET Framework, SQL
+                      Server, IIS, AngularJS, Electron, Bootstrap, and jQuery.
+                    </li>
+                    <li>
+                      Conducted analysis, development, validation, and
+                      improvement of system functionalities.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mb-4">
+                  <h4 class="h5 fw-bold" data-lang="project_4_title">
+                    Fiscal Recovery Application
+                  </h4>
+                  <p class="text-muted" data-lang="project_4_date">
+                    2019 - 2020
+                  </p>
+                  <ul data-lang="project_4_description">
+                    <li>
+                      Created a fiscal recovery application using ReactJS, .NET
+                      Core, and SQL Server 2017 with JSON support.
+                    </li>
+                    <li>
+                      Contributed from initial structuring to consolidation of
+                      main functionalities.
+                    </li>
+                    <li>
+                      Collaborated with stakeholders and validated with
+                      management and accounting consultancy.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mb-4">
+                  <h4 class="h5 fw-bold" data-lang="project_5_title">
+                    Language Practice Platform
+                  </h4>
+                  <p class="text-muted" data-lang="project_5_date">
+                    2019 - 2020
+                  </p>
+                  <ul data-lang="project_5_description">
+                    <li>
+                      Developed a platform for language practice based on
+                      geographical location.
+                    </li>
+                    <li>
+                      Utilized .NET Core, React Native, and SQL Server for both
+                      backend and mobile app development.
+                    </li>
+                    <li>
+                      Implemented hosting on SmarterAsp and applied software
+                      architecture concepts for system structuring.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="section-separator">
+                  <hr />
+                </div>
+
+                <h3 class="h4 fw-bold mb-3" data-lang="certifications">
+                  Certifications and Courses
+                </h3>
+                <ul>
+                  <li>
+                    Microsoft Certified: Azure Fundamentals (March 2024 - March
+                    2025)
+                  </li>
+                  <li>Formação Azure Developers (January 2024)</li>
+                  <li>
+                    Mentorship in Software Architecture with Elemar Jr (January
+                    2024)
+                  </li>
+                </ul>
+                <div class="certification">
+                  <a
+                    href="https://learn.microsoft.com/pt-br/users/joaodotfranca/credentials/a094978949661ab2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="images/AZ-900.png"
+                      alt="Microsoft Azure Fundamentals (AZ-900) Certification"
+                      class="certification-logo"
+                    />
+                    <span>Microsoft Azure Fundamentals (AZ-900)</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
+      </div>
     </main>
- 
-	<!-- Footer Content -->
-	<footer class="bg-dark text-white py-3 mt-4">
-		<div class="container text-center">
-			<p class="mb-0" data-lang="footer">&copy; 2024 João Paulo França. All rights reserved.</p>
-		</div>
-	</footer>
+
+    <!-- Footer Content -->
+    <footer class="bg-dark text-white py-3 mt-4">
+      <div class="container text-center">
+        <p class="mb-0" data-lang="footer">
+          &copy; 2025 João Paulo França. All rights reserved.
+        </p>
+      </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Email copy functionality
-        document.getElementById('email-link').addEventListener('click', function(e) {
-            e.preventDefault();
-            navigator.clipboard.writeText('jpdotfranca@gmail.com').then(function() {
-                alert('Email copied to clipboard!');
-            }, function(err) {
-                console.error('Could not copy text: ', err);
-            });
+      // Email copy functionality
+      document
+        .getElementById("email-link")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          navigator.clipboard.writeText("jpdotfranca@gmail.com").then(
+            function () {
+              alert("Email copied to clipboard!");
+            },
+            function (err) {
+              console.error("Could not copy text: ", err);
+            }
+          );
         });
 
-        // Theme toggle
-        const themeToggle = document.querySelector('.theme-toggle');
-        themeToggle.addEventListener('click', () => {
-            document.documentElement.classList.toggle('light-mode');
+      // Theme toggle
+      const themeToggle = document.querySelector(".theme-toggle");
+      themeToggle.addEventListener("click", () => {
+        document.documentElement.classList.toggle("light-mode");
+      });
+
+      // Language switch
+      const languageSelect = document.getElementById("languageSelect");
+      let translations;
+
+      fetch("translations.json")
+        .then((response) => response.json())
+        .then((data) => {
+          translations = data;
+          languageSelect.addEventListener("change", (event) => {
+            const lang = event.target.value;
+            updateContent(lang);
+          });
         });
 
-        // Language switch
-        const languageSelect = document.getElementById('languageSelect');
-        let translations;
+      function updateContent(lang) {
+        document.querySelectorAll("[data-lang]").forEach((element) => {
+          const key = element.getAttribute("data-lang");
+          if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
+          }
+        });
+      }
 
-        fetch('translations.json')
-            .then(response => response.json())
-            .then(data => {
-                translations = data;
-                languageSelect.addEventListener('change', (event) => {
-                    const lang = event.target.value;
-                    updateContent(lang);
-                });
-            });
-
-        function updateContent(lang) {
-            document.querySelectorAll('[data-lang]').forEach(element => {
-                const key = element.getAttribute('data-lang');
-                if (translations[lang] && translations[lang][key]) {
-                    element.textContent = translations[lang][key];
-                }
-            });
-        }
-
-        // Code animation
-        const codeAnimation = document.getElementById('codeAnimation');
-        const codeSnippet = `
+      // Code animation
+      const codeAnimation = document.getElementById("codeAnimation");
+      const codeSnippet = `
 public class PaymentProcessor
 {
     public async Task<PaymentResult> ProcessPayment(PaymentRequest request)
@@ -273,15 +430,15 @@ public class PaymentProcessor
     }
 }`;
 
-        let i = 0;
-        function typeCode() {
-            if (i < codeSnippet.length) {
-                codeAnimation.innerHTML += codeSnippet.charAt(i);
-                i++;
-                setTimeout(typeCode, 50);
-            }
+      let i = 0;
+      function typeCode() {
+        if (i < codeSnippet.length) {
+          codeAnimation.innerHTML += codeSnippet.charAt(i);
+          i++;
+          setTimeout(typeCode, 50);
         }
-        typeCode();
+      }
+      typeCode();
     </script>
-</body>
+  </body>
 </html>
